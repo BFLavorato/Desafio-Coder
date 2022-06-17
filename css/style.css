@@ -92,6 +92,25 @@
         height: 200px;
         width: 200px;
     }
+
+    /*seccion nosotros*/
+    .museo img{
+        height: 150px;
+        width: 200px;
+        border-radius: 3%;
+    }
+    .seminario img{
+        height: 250px;
+        width: 300px;
+        border-radius: 5%;
+    }
+    .seminarioR img {
+        height: 250px;
+        width: 300px;
+        border-radius: 5%;
+    }
+    sectionN {margin-top: 10%;
+        margin-bottom: 4%;}
 }
 
 @media (min-width:600px) {
@@ -144,6 +163,28 @@
         column-gap: 5%;
         flex-flow: row wrap;
         justify-content: space-evenly;
+    }
+
+    /*seccion nosotros*/
+    .h {margin-top: 3em;}
+    .nosotros p {text-align: start;
+        margin: 3em;}
+    
+    .museo {    
+        display: flex;
+        row-gap: 10%;
+        column-gap: 50px;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .seminario p{margin:3em;}
+    .museo img{margin: 5px;
+        height: 250px;
+        width: 300px;
+    }
+    .seminario img{
+        height: 350px;
+        width: 400px;
     }
 }
 
@@ -210,4 +251,18 @@
         grid-template-areas:
             "aside catalogo";
     }
+
+    /*seccion nosotros*/
+    .seminarios div img {height: 300px;
+        width: 600px;}
+    .seminarios div p {text-align: center;}
+    .seminarios{display:flex;
+    flex-flow: column nowrap;
+    margin: 5%;}
+    .seminario {display:flex;
+    flex-direction: row;}
+    .seminarioR {display: flex;
+    flex-direction: row-reverse;
+    margin-top: 15%;
+    margin-bottom: 15%;}
 }
