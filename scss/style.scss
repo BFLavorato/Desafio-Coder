@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 360px) {
+    body {
+        background-color: #bfbdc1;
+        text-align: center;
+        font-family: "Nunito";
+    }
+    img {border-radius: 5%;}
+    header {
+        background-color: #deb841;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        list-style-type: none;
+    }
+
+    li :hover {
+        border: 1px solid black;
+    }
+
+    footer {
+        background-color: #deb841;
+        margin-top: 15px;
+        margin-bottom: 0%;
+    }
+
+    footer div {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .envoltura {
+        height: 100vh;
+        width: 100%;
+    }
+    .contenidoInicio {margin-top: 15%;}
+    .galeriaInicio img {
+        height: 100px;
+        width: 150px;
+        margin-top: 25px;
+    }
+
+
+    .formulario {
+        background-color: #937d64;
+        margin: 20px 20px 20px 20px;
+        padding: 15px 15px 15px 15px;
+        text-align: start;
+        border-radius: 2%;
+        
+    }
+
+    /*seccion productos*/
+    .aside {
+        margin-top: 25px;
+        background-color: #de9e36;
+        padding: 1%;
+    }
+
+    .aside div {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 25px;
+        margin-top: 25px;
+    }
+
+    .catalogo {
+        margin-bottom: 50px;
+    }
+
+    .catalogo img {
+        margin-top: 70px;
+        margin-bottom: 15px;
+        height: 200px;
+        width: 200px;
+    }
+
+    /*seccion nosotros*/
+    .museo img{
+        height: 150px;
+        width: 200px;
+        border-radius: 3%;
+    }
+    .seminario img{
+        height: 250px;
+        width: 300px;
+        border-radius: 5%;
+    }
+    .seminarioR img {
+        height: 250px;
+        width: 300px;
+        border-radius: 5%;
+    }
+    
+    /*bootstrap*/
+    .carousel {width: 300px;
+        height: 150px;
+        margin-top: 25px;}
+}
+
+@media (min-width:600px) {
+    .galeriaInicio img {
+        height: 200px;
+        width: 250px;
+    }
+
+    #carrusel img {
+        height: 250px;
+        width: 550px;
+    }
+
+    .destacados {
+        grid-area: destacados;
+    }
+
+    .novedades {
+        grid-area: novedades;
+    }
+
+    #carrusel {
+        grid-area: carrusel;
+    }
+
+    .galeriaInicio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "carrusel carrusel"
+            "destacados novedades"
+            "destacados novedades"
+            "destacados novedades";
+        gap: 15px;
+    }
+
+    p,
+    h2 {
+        height: 3em;
+    }
+
+    /*seccion productos*/
+    .catalogo div {
+        width: 200px;
+    }
+
+    .catalogo {
+        display: flex;
+        row-gap: 5%;
+        column-gap: 5%;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    /*seccion nosotros*/
+    .h {margin-top: 3em;}
+    .nosotros p {text-align: start;
+        margin: 3em;}
+    
+    .museo {    
+        display: flex;
+        row-gap: 10%;
+        column-gap: 50px;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .seminario p{margin:3em;}
+    .museo img{margin: 5px;
+        height: 250px;
+        width: 300px;
+    }
+    .seminario img{
+        height: 350px;
+        width: 400px;
+    }
+    /*bootstrap*/
+
+    .carousel {
+        height: 250px;
+        width: 550px;
+    }
+}
+
+@media (min-width:1024px) {
+
+    #carrusel img {
+        height: 300px;
+        width: 850px;
+    }
+
+    .galeriaInicio img {
+        height: 100px;
+        width: 150px;
+    }
+
+    .galeriaInicio {
+        display: grid;
+        row-gap: 15%;
+        column-gap: 15em;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "carrusel"
+            "destacados "
+            "novedades ";
+    }
+
+    .destacados {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .novedades {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 30%;
+    }
+
+    /*seccion productos*/
+    .aside {
+        grid-area: aside;
+    }
+
+    .catalogo {
+        grid-area: catalogo;
+    }
+
+    .catalogo {
+        justify-content: center;
+    }
+
+    .aside div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .productos {
+        display: grid;
+        grid-template-areas:
+            "aside catalogo";
+    }
+
+    /*seccion nosotros*/
+    .seminarios div img {height: 300px;
+        width: 600px;}
+    .seminarios div p {text-align: center;}
+    .seminarios{display:flex;
+    flex-flow: column nowrap;
+    margin: 5%;}
+    .seminario {display:flex;
+    flex-direction: row;}
+    .seminarioR {display: flex;
+    flex-direction: row-reverse;
+    margin-top: 15%;
+    margin-bottom: 15%;}
+
+    /*bootstrap*/
+    .carousel {
+        height: 300px;
+        width: 850px;
+    }
+}
