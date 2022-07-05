@@ -11,13 +11,25 @@
 
         .contenidoInicio {
             margin-top: 15%;
+            .galeriaInicio {
+                .destacados{@include borde;
+                    h2 {@include titulo(#243119);}
+                    img {
+                        height: 100px;
+                        width: 150px;
+                        margin-top: 25px;
+                    }}
+                .novedades {@include borde;
+                    h2 {@include titulo (#243119)}
+                    img {
+                        height: 100px;
+                        width: 150px;
+                        margin-top: 25px;
+                    }}
+                }
         }
 
-        .galeriaInicio img {
-            height: 100px;
-            width: 150px;
-            margin-top: 25px;
-        }
+        
     }
 
     @media (min-width:600px) {

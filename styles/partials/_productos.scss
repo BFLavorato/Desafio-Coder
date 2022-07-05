@@ -4,6 +4,8 @@
             margin-top: 25px;
             background-color: #de9e36;
             padding: 1%;
+            
+            h1 {@include titulo ;}
 
             div {
                 display: flex;
@@ -19,6 +21,7 @@
             margin-bottom: 50px;
 
             img {
+                @include borde;
                 margin-top: 70px;
                 margin-bottom: 15px;
                 height: 200px;

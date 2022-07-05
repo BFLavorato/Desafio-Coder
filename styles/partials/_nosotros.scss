@@ -1,11 +1,13 @@
 .sectionN {
     @media (min-width: 360px) {
+        h1{@include titulo;}
         .museo img {
             height: 150px;
             width: 200px;
             border-radius: 3%;
         }
         .seminarios {
+            h2 {@include titulo;}
             .seminario img {
             height: 250px;
             width: 300px;
@@ -13,7 +15,7 @@
         }
 
             .seminarioR {
-            img {
+                img {
                 
                 height: 250px;
                 width: 300px;
@@ -42,6 +44,7 @@
             justify-content: space-evenly;
 
             img {
+                @include borde;
                 margin: 5px;
                 height: 250px;
                 width: 300px;
