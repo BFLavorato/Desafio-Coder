@@ -1,27 +1,51 @@
 .sectionN {
     @media (min-width: 360px) {
+        
         h1{@include titulo;}
-        .museo img {
+        .nosotros {
+            display: inline;
+            padding: 5em;
+            margin-bottom: 5em;
+            position: relative;
+            align-items:stretch;
+            p {
+            text-align: start;
+            letter-spacing: normal;
+            word-spacing: normal;
+            padding: 5em;
+            margin-bottom: 5em;
+            
+        }}
+        .museo {
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            margin:100px;
+            
+            img {
+            @include borde;
             height: 150px;
             width: 200px;
             border-radius: 3%;
-        }
+        }}
         .seminarios {
             h2 {@include titulo;}
-            .seminario img {
-            height: 250px;
-            width: 300px;
-            border-radius: 5%;
-        }
-
-            .seminarioR {
+            div{
+                gap:15px;
+                p {text-align: center;
+                    margin-top: 5em;
+                    margin-bottom: 6em;
+                }
+    
                 img {
-                
-                height: 250px;
-                width: 300px;
-                border-radius: 5%;
-            } 
+                    @include borde;
+                    margin-top: 15px;
+                    height: 250px;
+                    width: 300px;
+                }
             }
+        
+
         }
         
     }
@@ -31,10 +55,7 @@
             margin-top: 3em;
         }
 
-        .nosotros p {
-            text-align: start;
-            margin: 3em;
-        }
+        
 
         .museo {
             display: flex;
@@ -88,11 +109,13 @@
 
             }
 
-            .reverse {
+            .seminarioR {
                 display: flex;
                 flex-direction: row-reverse;
                 margin-top: 15%;
                 margin-bottom: 15%;
+                p {position:relative;}
+
             }
         }
     }

@@ -214,7 +214,30 @@ footer div {
     font-family: "Roboto", sans-serif;
     font-size: xx-large;
   }
+  .sectionN .nosotros {
+    display: inline;
+    padding: 5em;
+    margin-bottom: 5em;
+    position: relative;
+    align-items: stretch;
+  }
+  .sectionN .nosotros p {
+    text-align: start;
+    letter-spacing: normal;
+    word-spacing: normal;
+    padding: 5em;
+    margin-bottom: 5em;
+  }
+  .sectionN .museo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+  }
   .sectionN .museo img {
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 5px;
     height: 150px;
     width: 200px;
     border-radius: 3%;
@@ -224,24 +247,26 @@ footer div {
     font-family: "Roboto", sans-serif;
     font-size: xx-large;
   }
-  .sectionN .seminarios .seminario img {
-    height: 250px;
-    width: 300px;
-    border-radius: 5%;
+  .sectionN .seminarios div {
+    gap: 15px;
   }
-  .sectionN .seminarios .seminarioR img {
+  .sectionN .seminarios div p {
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 6em;
+  }
+  .sectionN .seminarios div img {
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 15px;
     height: 250px;
     width: 300px;
-    border-radius: 5%;
   }
 }
 @media (min-width: 600px) {
   .sectionN .h {
     margin-top: 3em;
-  }
-  .sectionN .nosotros p {
-    text-align: start;
-    margin: 3em;
   }
   .sectionN .museo {
     display: flex;
@@ -284,11 +309,14 @@ footer div {
     display: flex;
     flex-direction: row;
   }
-  .sectionN .seminarios .reverse {
+  .sectionN .seminarios .seminarioR {
     display: flex;
     flex-direction: row-reverse;
     margin-top: 15%;
     margin-bottom: 15%;
+  }
+  .sectionN .seminarios .seminarioR p {
+    position: relative;
   }
 }
 
